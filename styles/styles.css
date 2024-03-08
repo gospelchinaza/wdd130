@@ -1,0 +1,47 @@
+nav {
+    background-color: #143285;
+    padding: 10px;
+}
+nav a {
+    color: white;
+    display: inline-block;
+    padding: 20px;
+}
+h1 {
+    color: rgba(18, 50, 148, 0.575);
+}
+img {
+    width: 400px;
+    height: auto;
+    border: 1px;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+}
+p{
+    padding: 10px;
+}
+main {
+    max-width: 840px;
+}
+aside {
+    width: 400px;
+    margin: 2px;
+    border: 1px;
+    padding: 2px;
+    background-color: cadetblue;
+    color: bisque;
+}
+aside img {
+    width: 400px;
+    height: auto;
+}
+main img {
+    width: 400px;
+    height: auto;
+}
+p {padding: 0;}
+footer {
+    margin-top: 15px;
+    border-top: 1px;
+    text-align: center;
+}
