@@ -1,0 +1,123 @@
+@import url(https://fonts.google.com/share?selection.family=Montserrat:ital,wght@0,100..900;1,100..900|Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--paragraph-font);
+    max-width: 720px;
+    padding: 20px;
+    margin: 0 auto;
+    color: aquamarine;
+}
+:root {
+    --primary-color: #001f3f;
+    --secondary-color: #0074cc;
+    --accent1-color: #2ecc71;
+    --accent2-color: #ff6f61;
+
+    --heading-font: 'Montserrat', serif;
+    --paragraph-font: 'Roboto', serif;
+       
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+p {
+    padding: 10px;
+    font-family: var(--paragraph-font);
+    color: var(--primary-color);
+}
+header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    max-width: 50px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+nav a.active {
+    background-color: #0074cc;
+    color: #fff;
+}
+
+main {
+    margin-bottom: 20px;
+}
+
+.history h2,
+.adventures h2 {
+    color: #0074cc;
+    margin-bottom: 10px;
+}
+
+.adventures {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.trip {
+    flex: 1 1 30%; /* Adjust as needed */
+    position: relative;
+}
+
+.trip img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.trip figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0074cc;
+    color: #fff;
+}
+
+.sociallinks {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.sociallinks img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.sociallinks img:hover {
+    transform: scale(1.2);
+}
