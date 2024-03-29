@@ -24,6 +24,10 @@ body{
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--primary-color);
+    border-bottom: 1px solid rgba(red, green, blue, alpha);
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
 }
 p {
     padding: 10px;
@@ -42,16 +46,23 @@ header {
 }
 
 nav {
+    background-color: #0074cc;
+    padding: 2rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    width: 800px;
+    height: auto;
 }
 
 nav a {
+    color: white;
+    display: block;
+    padding: 0.5rem;
     text-decoration: none;
-    color: #333;
-    padding: 10px 15px;
-    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 700;
+
 }
 
 nav a.active {
@@ -63,28 +74,26 @@ main {
     margin-bottom: 20px;
 }
 
-.history h2,
-.adventures h2 {
-    color: #0074cc;
-    margin-bottom: 10px;
-}
-
 .adventures {
-    display: flex;
+    display: grid;
     flex-wrap: wrap;
     gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 800px;
 }
 
 .trip {
-    flex: 1 1 30%; /* Adjust as needed */
+    flex: 1 1 30%; 
     position: relative;
+    display: grid;
 }
 
 .trip img {
     width: 100%;
     height: auto;
-    display: block;
+    display: grid;
     border-radius: 5px;
+    
 }
 
 .trip figcaption {
@@ -100,15 +109,20 @@ main {
 
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     background-color: #0074cc;
     color: #fff;
+    display: flex;
+    width: 800px;
 }
 
 .sociallinks {
     display: flex;
-    justify-content: flex-end;
-    gap: 10px;
+    justify-content: left;
+    gap: 0;
+    width: 400px;
+    height: 50px;
+    background-color: var(--secondary-color);
 }
 
 .sociallinks img {
@@ -121,3 +135,25 @@ footer {
 .sociallinks img:hover {
     transform: scale(1.2);
 }
+.hero {
+    display: flex;
+    position: relative;
+    width: 800px;
+}
+p {
+    position: relative;
+    display: block;
+}
+.hero img {
+    height: 100px;
+    width: 300px;
+}
+.history img  {
+    height: 150px;
+    width: 150px;
+}
+.history {
+    display: flex;
+    width: 800px;
+}
+
