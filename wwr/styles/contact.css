@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    max-width: 720px;
+    padding: 20px;
+    margin: 0 auto;
+    color: var(--primary-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    border-bottom: 1px solid rgba(red, green, blue, alpha);
+    margin-bottom: auto;
+    text-align: center;
+}
+
+
+p {
+    padding: 10px;
+    color: #001f3f;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    max-width: 50px;
+}
+
+nav {
+    background-color: #0074cc;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    
+}
+
+nav a {
+    color: #fff;
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+nav a.active {
+    background-color: #0074cc;
+    color: #fff;
+}
+
+main {
+    margin-bottom: 20px;
+}
+
+.company-info, .employee-profiles, .contact-form {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.company-info {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+
+.map-container {
+    width: 100%;
+    height: 450px;
+    margin-bottom: 20px;
+}
+.employee-profiles{
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+}
+.employee img {
+    height: 120px;
+    width: 200px;
+}
+.contact-form form div {
+    margin-bottom: 10px;
+}
+
+.contact-form form label {
+    display: block;
+    font-weight: bold;
+}
+
+.contact-form form input[type="text"],
+.contact-form form input[type="email"],
+.contact-form form textarea,
+.contact-form form select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+.contact-form form textarea {
+    resize: vertical;
+}
+
+.contact-form form button[type="submit"] {
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form form button[type="submit"]:hover {
+    background-color: #28b463;
+}
+
+.sociallinks {
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+}
+
+.sociallinks img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.sociallinks img:hover {
+    transform: scale(1.2);
+}

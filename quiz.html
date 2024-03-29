@@ -3,34 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML and CSS Quiz</title>
+    <title>Naza Rafting Company | Contact Us</title>
     <link rel="stylesheet" href="styles/quiz.css">
 </head>
 <body>
-    <h1>HTML and CSS Quiz</h1>
-    <form action="#" method="post">
-        <div>
-            <label for="q1">Fill in the blank:</label>
-            <input type="text" id="q1" name="q1">
-        </div>
-        <div>
-            <label for="q2">Short answer question:</label>
-            <textarea id="q2" name="q2" rows="4" cols="50"></textarea>
-        </div>
-        <div>
-            <label for="q3">Choose one:</label>
-            <select id="q3" name="q3">
-                <option value="" selected disabled>Choose One ...</option>
-                <option value="html">HTML</option>
-                <option value="css">CSS</option>
-                <option value="both">Both HTML and CSS</option>
-            </select>
-        </div>
-        <div>
-            <label for="q4">Integer answer:</label>
-            <input type="number" id="q4" name="q4">
-        </div>
-        <button type="submit">Submit Quiz</button>
-    </form>
+    <header class="logo">
+        <nav>
+            <img src="images/logo.png" alt="Rafting Site Logo">
+            <a href="wwr/index.html">Home page</a>
+            <a href="wwr/about.html">About Us</a>
+            <a href="wwr/trips.html">Trips</a>
+            <a href="wwr/contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Contact Us</h1>
+        <section class="company-info">
+            <h2>Company Information</h2>
+            <p>Address: 35 First Caterpillar Street, Totowu, Igbesa, Ogun State</p>
+            <p>Phone: +234 09028101650</p>
+            <p>Email: gospelonuka@gmail.com</p>
+            <div class="map-container">
+                <iframe src="images/googlemap.png" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+        <section class="employee-profiles">
+            <h2>Meet Our Team</h2>
+            <div class="employee">
+                <img src="images/employee1.png" alt="Employee 1">
+                <p>John Doe<br>CEO</p>
+            </div>
+            <div class="employee">
+                <img src="images/employee2.png" alt="Employee 2">
+                <p>Jane Smith<br>Marketing Manager</p>
+            </div>
+            <div class="employee">
+                <img src="images/employee3.png" alt="Employee 3">
+                <p>Mike Johnson<br>Customer Support</p>
+            </div>
+        </section>
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="#" method="post">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="purpose">Purpose of Message:</label>
+                    <select id="purpose" name="purpose">
+                        <option value="general">General Inquiry</option>
+                        <option value="reservation">Reservation Question</option>
+                        <option value="suggestion">Website Suggestion</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <div>
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>©2024 📍 Naze Rafting Company 📍 Onuka Gospel 📍</p>
+        <nav class="sociallinks">
+            <a href="https://www.facebook.com/">
+                <img src="images/facebook.png" alt="Facebook Image">Facebook
+            </a>
+            <a href="https://www.instagram.com/accounts/login/">
+                <img src="images/instagram.png" alt="Instagram Image">Instagram
+            </a>
+            <a href="https://twitter.com/login">
+                <img src="images/twitter.png" alt="Twitter Iimage">Twitter
+            </a>
+        </nav>
+    </footer>
 </body>
 </html>
