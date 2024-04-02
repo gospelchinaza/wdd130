@@ -155,5 +155,5 @@ p {
 .history {
     display: flex;
     width: 800px;
+    text-align: justify;
 }
-
