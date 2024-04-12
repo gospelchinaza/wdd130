@@ -13,7 +13,7 @@ body{
     --heading-font: 'Montserrat', serif;
     --paragraph-font: 'Roboto', serif;
     
-    --nav-background-color: blue;
+    --nav-background-color: rgb(182, 234, 243);
     --nav-link-color: green;
     --nav-hover-link-color: orange;
     --nav-hover-backgroud-color: rgb(0, 195, 255);   
